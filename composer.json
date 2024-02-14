@@ -1,16 +1,14 @@
 {
-    "name": "alvarogarcia7/boilerplate-kata-php",
-    "description": "A simple PHP boilerplate to kickstart a kata or a coding dojo",
+    "name": "alvarogarcia7/study-functional-any-all-php",
+    "description": "A simple PHP sandbox to study the Functional Parts of ANY and ALL",
     "version": "0.0.1",
-    "keywords": ["kata", "practice", "coding dojo", "dojo"],
+    "keywords": ["kata", "practice", "coding dojo", "dojo", "study", "functional"],
     "require": {
         "ext-json": "*"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.3",
-        "phpspec/prophecy": "^1.17",
-        "symfony/process": "^5.1",
-        "guzzlehttp/guzzle": "^6.3"
+        "phpspec/prophecy": "^1.17"
     },
     "license": "MIT",
     "authors": [
@@ -25,12 +23,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Kata\\": "src/"
-        }
+            "Functional\\": "src/Functional"
+        },
+        "files": [
+            "src/Functional/_autoload.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Kata\\": "tests/"
+            "Tests\\Functional\\": "tests/Functional/"
         }
     },
     "bin": ["src/main.php"]
