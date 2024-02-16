@@ -1,4 +1,8 @@
-## PHP Boilerplate
+## Study on Functional Predicates: any, all
+
+See `EXERCISE.md`
+
+## Previous Readme - PHP Boilerplate Readme
 
 ### Running it for the first time
 
