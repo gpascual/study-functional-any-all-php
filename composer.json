@@ -23,7 +23,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Functional\\": "src/Functional"
+            "Functional\\": "src/Functional/",
+            "LeapYears\\": "src/"
         },
         "files": [
             "src/Functional/_autoload.php"
@@ -31,8 +32,8 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Tests\\Functional\\": "tests/Functional/"
+            "Tests\\": "tests/"
         }
     },
-    "bin": ["src/main.php"]
+    "bin": ["src/leapYear"]
 }

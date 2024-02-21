@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+use LeapYears\LeapYears;
+
+include $_composer_autoload_path ?? dirname(__DIR__) . '/vendor/autoload.php';
+
+$leapYears = new LeapYears();
+
+$year = $argv[1];
+
+if ($leapYears->isLeapYear($year)) {
+    echo "$year is a leap year\n";
+    exit(0);
+}
+
+echo "$year is not a leap year\n";
+exit(1);
